@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Intro Section Frontend Mentor challenge</title>
+  </head>
+  <body class="bg-almostWhite">
+    <!-- Global Container -->
+    <nav
+      role="navigation"
+      class="max-w-7xl mx-auto flex justify-between px-6 py-10 text-sm"
+    >
+      <!-- left Side -->
+      <section class="flex items-center space-x-14">
+        <!-- logo -->
+        <img src="images/logo.svg" alt="" />
+        <!-- Menu -->
+        <div class="hidden items-center space-x-8 md:flex">
+          <div id="dropdownBtn" class="relative group">
+            <div
+              class="text-mediumGray cursor-pointer group transition-all ease select-none hover:text-black block items-center space-x-6"
+            >
+              Features
+
+              <img
+                src="images/icon-arrow-up.svg"
+                alt=""
+                class="inline-block rotate-0 group-hover:rotate-180 transition-all ease"
+              />
+            </div>
+            <div
+              id="dropdownItems"
+              class="hidden absolute top-9 bg-white rounded-md py-4 px-6 -ml-20 shadow-xl flex flex-col space-y-4"
+            >
+              <div class="flex items-center space-x-3">
+                <img src="images/icon-todo.svg" alt="" class="h-5" />
+                <a href="#" class="text-mediumGray hover:text-gray-900"
+                  >Todo List</a
+                >
+              </div>
+              <div class="flex items-center space-x-3">
+                <img src="images/icon-calendar.svg" alt="" class="h-5" />
+                <a href="#" class="text-mediumGray hover:text-gray-900"
+                  >Calender</a
+                >
+              </div>
+              <div class="flex items-center space-x-3">
+                <img src="images/icon-reminders.svg" alt="" class="h-5" />
+                <a href="#" class="text-mediumGray hover:text-gray-900"
+                  >Reminders</a
+                >
+              </div>
+              <div class="flex items-center space-x-3">
+                <img src="images/icon-planning.svg" alt="" class="h-5" />
+                <a href="#" class="text-mediumGray hover:text-gray-900"
+                  >Planning</a
+                >
+              </div>
+            </div>
+          </div>
+          <div id="drpdwnBtn" class="relative group transition-all">
+            <div
+              class="flex items-center cursor-pointer  space-x-1"
+            >
+              <a href="#" class="text-mediumGray hover:text-black">Company</a>
+              <img
+                src="images/icon-arrow-up.svg"
+                alt=""
+                class="rotate-0 group-hover:rotate-180"
+              />
+            </div>
+            <div
+              id="drpdwnItems"
+              class="hidden absolute top-9 bg-white rounded-md p-4 w-24 shadow-xl  flex-col  space-y-4 flex"
+            >
+              <a href="#" class="text-mediumGray hover:text-black">History</a>
+              <a href="#" class="text-mediumGray hover:text-black">Our Team</a>
+              <a href="#" class="text-mediumGray hover:text-black">Blog</a>
+            </div>
+          </div>
+          <a href="#" class="text-mediumGray hover:text-black">Careers</a>
+          <a href="#" class="text-mediumGray hover:text-black">About</a>
+        </div>
+      </section>
+      <!-- right side -->
+      <section class="hidden items-center space-x-8 md:flex">
+        <a href="#" class="text-mediumGray hover:text-black">Login</a>
+        <button
+          class="py-2 px-6 rounded-xl border-2 border-mediumGray text-mediumGray hover:border-black hover:text-black"
+        >
+          Register
+        </button>
+      </section>
+        <!-- Hamburger Button -->
+		<button
+    id="menu-btn"
+    class="z-40 block md:hidden focus:outline-none hamburger"
+  >
+    <span class="hamburger-top"></span>
+    <span class="hamburger-middle"></span>
+    <span class="hamburger-bottom"></span>
+  </button>
+  </div>
+
+    </nav>
+      <!-- Mobile Menu -->
+  <div
+  id="menu"
+  class="fixed inset-0  hidden md:hidden justify-end w-full h-full m-h-screen bg-black/60 "
+  >
+    <div class="h-full w-[65%]  bg-white px-6 py-4">
+        <!-- Menu -->
+        <div class=" mt-20 gap-5  flex flex-col">
+          <div id="dpdownBtn" class="relative group">
+            <div
+              class="text-mediumGray cursor-pointer group transition-all ease select-none hover:text-black block items-center space-x-6"
+            >
+              Features
+
+              <img
+                src="images/icon-arrow-down.svg"
+                alt=""
+                class="inline-block rotate-0 group-hover:rotate-180 transition-all ease"
+              />
+            </div>
+            <div
+              id="dpdownItems"
+              class="  bg-white hidden rounded-md py-4 px-6  flex flex-col space-y-4"
+            >
+              <div class="flex items-center space-x-3">
+                <img src="images/icon-todo.svg" alt="" class="h-5" />
+                <a href="#" class="text-mediumGray hover:text-gray-900"
+                  >Todo List</a
+                >
+              </div>
+              <div class="flex items-center space-x-3">
+                <img src="images/icon-calendar.svg" alt="" class="h-5" />
+                <a href="#" class="text-mediumGray hover:text-gray-900"
+                  >Calender</a
+                >
+              </div>
+              <div class="flex items-center space-x-3">
+                <img src="images/icon-reminders.svg" alt="" class="h-5" />
+                <a href="#" class="text-mediumGray hover:text-gray-900"
+                  >Reminders</a
+                >
+              </div>
+              <div class="flex items-center space-x-3">
+                <img src="images/icon-planning.svg" alt="" class="h-5" />
+                <a href="#" class="text-mediumGray hover:text-gray-900"
+                  >Planning</a
+                >
+              </div>
+            </div>
+          </div>
+          <div id="drpdnBtn" class="relative group transition-all">
+            <div
+              class="flex items-center cursor-pointer  space-x-1"
+            >
+              <a href="#" class="text-mediumGray hover:text-black">Company</a>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt=""
+                class="rotate-0 group-hover:rotate-180"
+              />
+            </div>
+            <div
+              id="drpdnItems"
+              class="  bg-white hidden py-4 px-6   flex-col  space-y-4 flex"
+            >
+              <a href="#" class="text-mediumGray hover:text-black">History</a>
+              <a href="#" class="text-mediumGray hover:text-black">Our Team</a>
+              <a href="#" class="text-mediumGray hover:text-black">Blog</a>
+            </div>
+          </div>
+          <a href="#" class="text-mediumGray hover:text-black">Careers</a>
+          <a href="#" class="text-mediumGray hover:text-black">About</a>
+          <section class=" items-center space-y-4 flex flex-col">
+            <a href="#" class="text-mediumGray hover:text-black">Login</a>
+            <button
+              class="py-2 px-6 w-full rounded-xl border-2 border-mediumGray text-mediumGray hover:border-black hover:text-black"
+            >
+              Register
+            </button>
+          </section>
+        </div>
+
+    </div>
+  </div>
+
+
+    <main role="main" class="overflow-hidden">
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="max-w-5xl mx-auto px-6 flex  w-full flex-col-reverse items-center space-y-6 md:flex-row md:space-y-0 ">
+          <!-- Text Content -->
+          <div class="max-w-lg  flex-col space-y-5 md:w-1/2">
+            <h1 class="text-4xl md:mt-40  text-center font-bold md:text-7xl md:text-left">
+              Make remote work
+            </h1>
+            <p class=" text-center md:py-5  md:text-lg text-mediumGray font-semibold tracking-wide md:text-left">
+              Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+            </p>
+           <div class="text-center md:text-left">
+            <button
+            class="py-3.5 px-6 font-bold rounded-xl hover:border-2 bg-gray-900 hover:bg-white text-white hover:border-mediumGray   hover:text-black "
+          >
+            Learn more
+          </button>
+           </div>
+           <div class=" max-w-3xl flex pt-8 md:pt-12 items-center space-x-8">
+             <img src="images/client-databiz.svg" alt="">
+             <img src="images/client-audiophile.svg" alt="">
+             <img src="images/client-meet.svg" alt="">
+             <img src="images/client-maker.svg" alt="">
+
+           </div>
+          </div>
+          <!-- Image -->
+          <div class="flex  justify-center w-1/2">
+            <img src="images/image-hero-desktop.png" alt="" class="hidden md:block w-full ml-48">
+          </div>
+          <img src="images/image-hero-mobile.png" alt="" class="md:hidden w-full pb-12  ">
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
